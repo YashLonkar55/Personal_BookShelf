@@ -1,0 +1,39 @@
+/* src/components/PersonalBookshelfPage.css */
+.bookshelf-container {
+    color: black;
+    margin-top: 20px;
+    /* margin: 20px;. */
+
+    /*  */
+  }
+
+  .bookshelf-container h2{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 5);
+    color: white;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+  }
+  
+  .card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #f9f9f9;
+  }
+  
+  .card h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  
+  .card p {
+    margin: 0;
+  }
+  

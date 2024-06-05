@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
+
+body {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, .1);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.Nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  color: white;
+  position: relative;
+}
+
+.Logo a{
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.Headers {
+  display: flex;
+  gap: 1rem;
+}
+
+.Headers a {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 5);
+  /* margin-right: 50px; */
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s;
+}
+
+.Headers a:hover {
+  /* No background color needed for hover effect as per original request */
+}
+
+.SignIn {
+  /* margin-left: 50px; */
+   font-size: 1rem;
+  cursor: pointer;
+}
+
+.Hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .Nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .Headers {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    position: fixed;
+    top: 0;
+    /* margin-top: 50px; */
+    right: -250px; /* Initially hide the sidebar outside of the screen */
+    height: 100%;
+    width: 250px;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* Frosted glass effect for Safari */
+    padding: 2rem;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease; /* Smooth transition effect */
+    z-index: 2; /* Ensure it is above other content */
+  }
+
+  .Headers.open {
+    display: flex;
+    right: 0; /* Slide the sidebar into view */
+  }
+
+  .Hamburger {
+    display: block;
+    z-index: 2;
+  }
+
+  .SignIn {
+    display: none;
+  }
+
+  .Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1; /* Ensure it is below the sidebar */
+    display: block;
+  }
+}

@@ -1,0 +1,36 @@
+.hero {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 7rem;
+  }
+  
+  .title span {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 5);
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .search-bar {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 1rem; /* Position the search bar below the title by default */
+  }
+  
+  @media (min-width: 768px) {
+    .title span{
+      display: flex;
+      justify-content: center;
+      font-size: 5rem;
+      /* text-align: center; */
+      margin-bottom: 0; /* Remove margin-bottom on larger screens */
+    }
+  }
+  

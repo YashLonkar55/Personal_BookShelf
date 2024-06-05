@@ -1,0 +1,87 @@
+/* src/components/BookSearchPage.css */
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.search-bar {
+  flex: 1;
+  padding: 8px;
+  margin-right: 8px;
+}
+
+.search-bar-container button {
+
+  padding: 9px 16px;
+  border-radius: 5px;
+}
+
+button{
+  margin-top: 12px;
+  padding: 6px 14px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.card-list {
+  color: black;
+  margin: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #f9f9f9;
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.card p {
+  margin: 0;
+}
+
+.card button {
+  margin-top: 8px;
+}
+
+.button{
+  margin-left: 46%;
+  width: 130px;
+  margin-top: 12px;
+  padding: 6px 14px;
+  border-radius: 5px;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.loading{
+  width: 100px;
+  height: 60px;
+  margin-left: 46%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+}
